@@ -1,0 +1,31 @@
+.deal-summaries {
+    display: flex;
+    list-style: none;
+}
+
+.deal-summary {
+    position: relative;
+
+    padding-right: 20px;
+
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+.deal-summary::before {
+    content: '·';
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 28px;
+}
+
+.deal-summary:last-child:before {
+    content: '';
+}
+
+.deal-summary__price {
+    font-weight: 600;
+}
